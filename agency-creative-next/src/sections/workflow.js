@@ -1,36 +1,33 @@
 /** @jsx jsx */
-import { jsx } from 'theme-ui';
-import { Container, Grid, Box, Heading, Text } from 'theme-ui';
-import SectionHeader from 'components/section-header';
+import { jsx } from "theme-ui";
+import { Container, Grid, Box, Heading, Text } from "theme-ui";
+import SectionHeader from "components/section-header";
 
 const data = [
   {
     id: 1,
-    title: 'Connect with support',
-    text:
-      'Our homes are designed to be move-in ready. Think furnished common areas, super fast wifi, and flexible leases.',
+    title: "Sit aperiam fugit ut modi quas.",
+    text: "Lorem ipsum dolor sit amet. Sit excepturi praesentium ea libero voluptatem sit quidem quod est ipsa praesentium non molestiae voluptatem et magnam optio.",
   },
   {
     id: 2,
-    title: 'Explain you business idea',
-    text:
-      'Our homes are designed to be move-in ready. Think furnished common areas, super fast wifi, and flexible leases.',
+    title: "Sit aperiam fugit ut modi quas.",
+    text: "Lorem ipsum dolor sit amet. Sit excepturi praesentium ea libero voluptatem sit quidem quod est ipsa praesentium non molestiae voluptatem et magnam optio.",
   },
   {
     id: 3,
-    title: 'Be partner & earn money',
-    text:
-      'Our homes are designed to be move-in ready. Think furnished common areas, super fast wifi, and flexible leases.',
+    title: "Sit aperiam fugit ut modi quas.",
+    text: "Lorem ipsum dolor sit amet. Sit excepturi praesentium ea libero voluptatem sit quidem quod est ipsa praesentium non molestiae voluptatem et magnam optio.",
   },
 ];
 
 export default function WorkFlow() {
   return (
-    <section sx={{ variant: 'section.workflow' }}>
+    <section sx={{ variant: "section.workflow" }}>
       <Container>
         <SectionHeader
-          title="Let’s meet how its work"
-          description="Focus only on the meaning, we take care of the design. As soon as the meeting end you can export in one click into your preferred format."
+          title="Sit aperiam fugit ut modi quas."
+          description="Lorem ipsum dolor sit amet. Sit excepturi praesentium ea libero voluptatem sit quidem quod est ipsa praesentium non molestiae voluptatem et magnam optio."
         />
 
         <Grid sx={styles.grid}>
@@ -38,7 +35,7 @@ export default function WorkFlow() {
             <Box sx={styles.card} key={item.id}>
               <Box sx={styles.iconBox}>{`0${item.id}`}</Box>
               <Box sx={styles.wrapper}>
-                <Heading sx={{ variant: 'text.heading' }}>{item.title}</Heading>
+                <Heading sx={{ variant: "text.heading" }}>{item.title}</Heading>
                 <Text sx={styles.wrapper.description}>{item.text}</Text>
               </Box>
             </Box>
@@ -55,27 +52,27 @@ const styles = {
     pb: [0, null, null, null, null, null, null, null, 5],
     mb: -1,
     gridGap: [
-      '40px',
-      '45px',
-      '45px 30px',
+      "40px",
+      "45px",
+      "45px 30px",
       null,
-      '60px 30px',
-      '50px 40px',
+      "60px 30px",
+      "50px 40px",
       null,
-      '75px',
+      "75px",
     ],
     gridTemplateColumns: [
-      'repeat(1,1fr)',
+      "repeat(1,1fr)",
       null,
-      'repeat(2,1fr)',
+      "repeat(2,1fr)",
       null,
-      'repeat(3,1fr)',
+      "repeat(3,1fr)",
     ],
   },
   card: {
-    display: 'flex',
-    flexDirection: ['column', null, null, 'row'],
-    textAlign: ['center', null, 'left'],
+    display: "flex",
+    flexDirection: ["column", null, null, "row"],
+    textAlign: ["center", null, "left"],
     px: [0, 5, 0],
   },
 
@@ -84,22 +81,22 @@ const styles = {
     mb: [4, null, null, 0],
     fontSize: [8, 9, null, null, 10, null, null, 11],
     fontWeight: 300,
-    fontFamily: 'special',
-    color: 'heading',
+    fontFamily: "special",
+    color: "heading",
     lineHeight: 1,
-    letterSpacing: 'heading',
-    mr: ['auto', null, 0, 4, null, null, null, 5],
-    ml: ['auto', null, 0],
+    letterSpacing: "heading",
+    mr: ["auto", null, 0, 4, null, null, null, 5],
+    ml: ["auto", null, 0],
     mt: [0, null, null, -1],
   },
   wrapper: {
-    width: '100%',
-    display: 'flex',
-    flexDirection: 'column',
-    mt: '-5px',
+    width: "100%",
+    display: "flex",
+    flexDirection: "column",
+    mt: "-5px",
     description: {
       fontSize: [1, 2],
-      fontWeight: 'body',
+      fontWeight: "body",
       lineHeight: 1.9,
       pt: 2,
     },

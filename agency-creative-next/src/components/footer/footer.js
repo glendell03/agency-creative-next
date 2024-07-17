@@ -21,7 +21,7 @@ export default function Footer() {
               <Link path="/" label="Privacy" />
             </nav>
             <Text as="p" sx={styles.copyrightArea.copyright}>
-              Copyright by 2020 RedQ, Inc
+              Copyright by 2024 Company Name
             </Text>
           </Box>
           <Flex sx={styles.footer.menuArea}>
